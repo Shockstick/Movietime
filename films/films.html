@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <section id="header">
+            <a href="#"><img src="../img/Logo_2.jpg" class="logo" alt=""></a>
+    
+            <div>
+                 <ul id="navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="active" href="../films/films.html">Films</a></li>
+                    <li><a href="../film-recensies/film-recensies.html">Film recensies</a></li>
+                    <li><a href="../vestigingen/vestigingen.html">vestigingen</a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>  
+    
+    <section id="page-header">
+        
+        <h2>Films</h2>
+        
+        <p>Hier staan alle films die uitkomen.</p>
+        
+
+    </section>
+
+    <input type="text" id="searchInput" placeholder="Ik ben opzoek naar..." onkeyup="zoekFilm()">
+
+        <div class="film-container">
+            <div class="film" onclick="openLightbox('film1')">
+                <img src="../img/Films/OppenHeimer.jpg" alt="Oppenheimer">
+                <p>Oppenheimer</p>
+            </div>
+            <div class="film" onclick="openLightbox('film2')">
+                <img src="../img/Films/Barbie.jpg" alt="Barbie">
+                <p>Barbie</p>
+            </div>
+            <div class="film" onclick="openLightbox('film3')">
+                <img src="../img/Films/Avatar_The_way_of_water.jpg" alt="Avatar: The Way of Water">
+                <p>Avatar: The Way of Water</p>
+            </div>
+            <div class="film" onclick="openLightbox('film4')">
+                <img src="../img/Films/John_Wick_4.jpg" alt="John Wick 4">
+                <p>John Wick 4</p>
+            </div>
+            <div class="film" onclick="openLightbox('film5')">
+                <img src="../img/Films/Dune_Part_2.jpg" alt="Dune: Part Two">
+                <p>Dune: Part Two</p>
+            </div>
+            <div class="film" onclick="openLightbox('film6')">
+                <img src="../img/Films/Super_Mario_Bros_Film.webp" alt="Super Mario Bros">
+                <p>Super Mario Bros</p>
+            </div>
+            <div class="film" onclick="openLightbox('film7')">
+                <img src="../img/Films/Fast_X.webp" alt="Fast X">
+                <p>Fast X</p>
+            </div>
+            <div class="film" onclick="openLightbox('film8')">
+                <img src="../img/Films/Spider-man_Across_The_Spider-verse.jpg" alt="Spider-Man: Across the Spider-Verse">
+                <p>Spider-Man: Across the Spider-Verse</p>
+            </div>
+            <div class="film" onclick="openLightbox('film9')">
+                <img src="../img/Films/Elemental.jpg" alt="Elemental">
+                <p>Elemental</p>
+            </div>
+            <div class="film" onclick="openLightbox('film10')">
+                <img src="../img/Films/Indiana_Jones_and_the_Dial_of_Destiny_theatrical_poster.jpg" alt="Indiana Jones 5">
+                <p>Indiana Jones 5</p>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Film Poster">
+                <p id="lightbox-text"></p>
+            </div>
+        </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../img/Logo_2.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Telefoon:</strong> 06 66475938 /06 88364728</p>
+            <p><strong>Uren:</strong> 11:00 t/m 21:00. Maandag t/m Zaterdag</p>
+            <div class="follow">
+
+        <div class="copyright">
+            <p>2024, Driptop - HTML CSS javascript</p>
+        </div>
+    </footer>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

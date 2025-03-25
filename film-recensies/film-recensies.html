@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <section id="header">
+            <a href="#"><img src="../img/Logo_2.jpg" class="logo" alt=""></a>
+    
+            <div>
+                 <ul id="navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../films/films.html">Films</a></li>
+                    <li><a class="active" href="../film-recensies/film-recensies.html">Film recensies</a></li>
+                    <li><a href="../vestigingen/vestigingen.html">vestigingen</a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>  
+    
+    <section id="page-header" class="blog-header">
+        
+        <h2>Film recensies</h2>
+        
+        <p>Hier zijn de recensies van alle verschillende films!</p>
+
+    </section>
+
+    <main class="recensies-container">
+        <!-- Linker sectie: Filmoverzicht -->
+        <section class="films-overzicht">
+            <h2>Geef je recensie</h2>
+            <div id="film-lijst">
+                <div class="film-item">
+                    <img src="../img/films/OppenHeimer.jpg" alt="Oppenheimer">
+                    <p>Oppenheimer</p>
+                    <div class="sterren" data-film="Oppenheimer">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Oppenheimer"></textarea>
+                    <button onclick="voegRecensieToe('Oppenheimer')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Avatar_The_way_of_water.jpg" alt="Avatar">
+                    <p>Avatar The way of water</p>
+                    <div class="sterren" data-film="Avatar The way of water">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Avatar The way of water"></textarea>
+                    <button onclick="voegRecensieToe('Avatar The way of water')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Barbie.jpg" alt="Barbie">
+                    <p>Barbie</p>
+                    <div class="sterren" data-film="Barbie">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Barbie"></textarea>
+                    <button onclick="voegRecensieToe('Barbie')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Dune_Part_2.jpg" alt="Dune Part 2">
+                    <p>Dune: Part 2</p>
+                    <div class="sterren" data-film="Dune Part 2">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Dune Part 2"></textarea>
+                    <button onclick="voegRecensieToe('Dune Part 2')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Elemental.jpg" alt="Elemental">
+                    <p>Elemental</p>
+                    <div class="sterren" data-film="Elemental">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Elemental"></textarea>
+                    <button onclick="voegRecensieToe('Elemental')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Super_Mario_Bros_Film.webp" alt="MarioBros">
+                    <p>De Super Mario bros Film</p>
+                    <div class="sterren" data-film="De Super Mario bros Film">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="De Super Mario bros Film"></textarea>
+                    <button onclick="voegRecensieToe('De Super Mario bros Film')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Spider-man_Across_The_Spider-verse.jpg" alt="Spiderman">
+                    <p>Spider-man: Across The Spider-verse</p>
+                    <div class="sterren" data-film="Spiderman">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Spiderman"></textarea>
+                    <button onclick="voegRecensieToe('Spiderman')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Fast_X.webp" alt="Fast X">
+                    <p>Fast X</p>
+                    <div class="sterren" data-film="Fast X">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Fast X"></textarea>
+                    <button onclick="voegRecensieToe('Fast X')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/John_Wick_4.jpg" alt="John Wick 4">
+                    <p>John Wick 4</p>
+                    <div class="sterren" data-film="John Wick 4">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="John Wick 4"></textarea>
+                    <button onclick="voegRecensieToe('John Wick 4')">Verstuur</button>
+                </div>
+                <div class="film-item">
+                    <img src="../img/films/Indiana_Jones_and_the_Dial_of_Destiny_theatrical_poster.jpg" alt="Indiana Jones 5">
+                    <p>Indiana Jones 5</p>
+                    <div class="sterren" data-film="Indiana Jones 5">
+                        ★★★★★
+                    </div>
+                    <textarea placeholder="Schrijf je recensie..." data-film="Indiana Jones 5"></textarea>
+                    <button onclick="voegRecensieToe('Indiana Jones 5')">Verstuur</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recensies-overzicht">
+            <h2>Laatste recensies</h2>
+            <div id="recensie-lijst"></div>
+            <div id="melding" class="hidden">
+                 Gefeliciteerd, je krijgt 10% korting! Code: <strong id="code"></strong>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../img/Logo_2.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Telefoon:</strong> 06 66475938 /06 88364728</p>
+            <p><strong>Uren:</strong> 11:00 t/m 21:00. Maandag t/m Zaterdag</p>
+            <div class="follow">
+
+        <div class="copyright">
+            <p>2024, Driptop - HTML CSS javascript</p>
+        </div>
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+
+</html>
